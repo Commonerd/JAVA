@@ -15,6 +15,6 @@ public class Employee extends Person{
 		super(name, age);
 		this.dept = dept;
 	}
-	
+	 
 	void print() {};
 }

@@ -31,3 +31,4 @@ class FireEngine extends Car {	// 소방차
 		System.out.println("water!!!");
 	}
 }
+ 

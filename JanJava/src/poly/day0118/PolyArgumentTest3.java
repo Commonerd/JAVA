@@ -23,8 +23,8 @@ class Tv3 extends Product3 {
 	public String toString() {
 		return "Tv";
 	}
-}
-
+} 
+ 
 class Computer3 extends Product3 {
 	Computer3() {
 		super(200);

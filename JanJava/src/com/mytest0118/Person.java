@@ -25,4 +25,4 @@ abstract class Person {
 	}
 	abstract void print();
 
-	}
+	} 

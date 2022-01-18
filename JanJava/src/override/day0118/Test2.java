@@ -25,4 +25,4 @@ public class Test2 {
 		parent1.getTest();
 		child.getTest();
 	}
-}
+} 

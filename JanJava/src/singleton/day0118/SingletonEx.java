@@ -27,4 +27,4 @@ public class SingletonEx {
 		System.out.println(s==s2);//true
 	}
 
-}
+} 

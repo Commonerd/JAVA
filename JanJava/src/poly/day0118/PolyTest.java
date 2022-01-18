@@ -29,4 +29,4 @@ public class PolyTest {
 		sub.method();//Sub.method() 실행
 	}
 
-}
+} 
