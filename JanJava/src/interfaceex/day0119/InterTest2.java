@@ -18,7 +18,7 @@ interface Inter3 extends Inter1, Inter2 { //다중상속이 가능하다
 	
 public class InterTest2 implements Inter3{
 	int a = 100;
-	public static void main(String[] args) {
+	public static void main1(String[] args) {
 
 	}
 
@@ -31,5 +31,13 @@ public class InterTest2 implements Inter3{
 	public int getDate() {
 		return a+10;
 	}
-
+	public static void main(String[] args) {
+		Inter1 i1 = new InterTest2();//인터페이스에 명시된 것만 사용.
+		System.out.println(i1.getA());
+		Inter2 i2 = new InterTest2();
+		System.out.println(i2.getA());
+		Inter3 i3 = new InterTest2();
+		System.out.println(i3.getA());
+		System.out.println(i3.getDate());
+	}
 }
