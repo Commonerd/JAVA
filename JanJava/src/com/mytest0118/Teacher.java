@@ -17,7 +17,9 @@ public class Teacher extends Person {
 		this.subject = subject;
 	}
 	
-	void print() {};
+	public void print() {
+		System.out.printf("이름: %s 나이 :%d 과목 : %s\n",getName(), getAge(), getSubject());
+	};
 
 } 
  

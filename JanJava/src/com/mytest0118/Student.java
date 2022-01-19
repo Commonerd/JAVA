@@ -17,8 +17,11 @@ public class Student extends Person{
 		super(name, age);
 		this.id = id;
 	}
-
-	void print() {};
+	
+	@Override
+	public void print() {
+		System.out.printf("이름 : %s 나이 : %d 학번 : %d\n", getName(), getAge(), getId());
+	};
 	 
 } 
  
