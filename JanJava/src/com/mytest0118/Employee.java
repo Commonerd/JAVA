@@ -16,5 +16,7 @@ public class Employee extends Person{
 		this.dept = dept;
 	}
 	 
-	void print() {};
+	void print() {
+		System.out.printf("이름: $s 나이: %d 학번: %d", super., );
+	}; 
 }
