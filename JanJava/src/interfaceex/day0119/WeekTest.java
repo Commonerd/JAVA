@@ -11,6 +11,12 @@ public class WeekTest {
 		for (Week day : Week.values()) { //배열의 모든 값 가져오기(오른쪽에서 꺼내서 왼쪽에 저장, 다음 줄에서 하나씩 출력.
 			System.out.println(day.name());
 		}
+		
+		if(today.compareTo(Week.FRI) <=0) {
+			System.out.println("공부하자~~");
+		}else {
+			System.out.println("놀자~~");
+		}
 	}
 
 }
