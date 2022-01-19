@@ -9,7 +9,7 @@ public class Bus {
 		super();
 		this.number = number;
 		this.rate = rate;
-	}
+	}	
 	
 	void pickup (int passenger) {
 		this.passenger += passenger; 
