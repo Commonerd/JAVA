@@ -3,17 +3,16 @@ package com.test.day01193;
 public class TransportationTest {
 
 	public static void main(String[] args) {
-		Subway subway = new Subway(2, 1250);
-		Bus bus1 = new Bus(100, 1000);
-		Bus bus2 = new Bus(200, 2000);
-		Student student1 = new Student("Jerry", 1, 10000);
-		student1.takeSubway();
-		student1.takeBus();
-		Student student2 = new Student("Tom", 2, 15000);
-		student2.takeBus();
-		System.out.printf("%s의 남은 돈 : %d\n $s의 남은 돈 : %d",
-				student1.name,student1.leftmoney(),
-				student2.name,student2.leftmoney());
+		Subway line2 = new Subway("2", 1250);
+		Bus bus100 = new Bus("100", 1000);
+		Bus bus200 = new Bus("200", 2000);
+		Student jerry = new Student("Jerry", 1, 10000);
+		jerry.takeSubway(line2);//메서드 안에 매개변수 유의해서 입력할 것(나는 안해서 실수)
+		jerry.takeBus(bus100);//메서드 안에 매개변수 유의해서 입력할 것(나는 안해서 실수)
+		Student tom = new Student("Tom", 2, 15000);
+		tom.takeBus(bus200);
+		jerry.show();
+		tom.show();
 	}
 
 }

@@ -1,21 +1,22 @@
 package com.test.day01193;
 
 public class Subway {
-	int linenumber;
-	int passenger;
+	String lineNumber;
+	int count;
 	int income;
-	int rate;
+	int charge;
 
-	public Subway(int linenumber, int rate) {
+	public Subway(String lineNumber, int charge) {
 		super();
-		this.linenumber = linenumber;
-		this.rate = rate;
-	}
+		this.lineNumber = lineNumber;
+		this.charge = charge;
+	} // 블럭 뒤에 세미콜론 찍는 것은 배열에서만 찍는다.
 
-	void pickup (int passenger) {
-		this.passenger += passenger; 
-		System.out.println(this.passenger);
+	public void take() {
+		count++;
+		income += charge;
 	}
-		
-}
+	public void showInfo() {
+		System.out.printf("%s노선의 승객은 %d명이고 수입은 %d입니다.\n", lineNumber, count, income);
+	}
 }

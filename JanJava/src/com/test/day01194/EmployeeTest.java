@@ -1,5 +1,7 @@
 package com.test.day01194;
 
+import java.util.Scanner;
+
 public class EmployeeTest {
 
 	public static void main(String[] args) {
@@ -18,7 +20,21 @@ public class EmployeeTest {
 		employee3.dept="Andorid개발부";
 		employee3.job="과장";
 		employee3.sal=4000;
-		Scanner
+		Scanner s = new Scanner(System.in);
+		System.out.println("사원번호를 입력하세요. >");
+		String a = s.next();
+		
+		if (a=="A1892") {
+			System.out.println(1);
+			}
+//			System.out.printf("%s : %s\t %s\t %s", a, employee1.dept, employee1.name, employee1.job);
+//		} else if (a=="B8077") {
+//			System.out.printf("%s : %s\t %s\t %s", a, employee2.dept, employee2.name, employee2.job);
+//		} else if (a=="C5691") {
+//			System.out.printf("%s : %s\t %s\t %s", a, employee3.dept, employee3.name, employee3.job);
+//		}
+		s.close();
+		
 	}	
 
 }
