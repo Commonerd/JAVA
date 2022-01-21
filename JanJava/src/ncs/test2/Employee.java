@@ -6,7 +6,7 @@ public abstract class Employee {
 	private String department;
 	private int salary;
 	
-	Employee(){}
+	public Employee(){}
 
 	public Employee(String name, int number, String department, int salary) {
 		super();
@@ -15,8 +15,6 @@ public abstract class Employee {
 		this.department = department;
 		this.salary = salary;
 	};
-	
-	
 	
 	public String getName() {
 		return name;
@@ -50,11 +48,14 @@ public abstract class Employee {
 		this.salary = salary;
 	}
 
-	abstract double tax();
+	public abstract double tax();
 
-	public double tax(int salary) {
-		// TODO Auto-generated method stub
-		return 0;
+	@Override
+	public String toString() {
+		return  name + "\t"+ department +"\t" + salary ;
+		//최종 결과출력물 형태를 보고 투스트링 판단. 오버라이딩하시길.
 	}
 	
+	
 }
+
