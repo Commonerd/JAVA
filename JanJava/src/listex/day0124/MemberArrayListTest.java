@@ -1,5 +1,7 @@
 package listex.day0124;
 
+import setex.day0124.Member;
+
 public class MemberArrayListTest {
 
 	public static void main(String[] args) {
@@ -20,7 +22,7 @@ public class MemberArrayListTest {
 		memberList.showAllMember();
 		
 		//1002번 회원 삭제
-		memberList.removeMember(1002	);
+		memberList.removeMember(1002);
 		
 		//전체 회원 출력
 		memberList.showAllMember();

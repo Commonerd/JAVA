@@ -1,8 +1,11 @@
 package listex.day0124;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class MemberArrayList {//회원명부
+import setex.day0124.Member;
+
+public class MemberArrayList {// 회원명부
 	private ArrayList<Member> arrayList;
 
 	// 어레이 리스트타입의 변수를 하나 선언
@@ -22,13 +25,13 @@ public class MemberArrayList {//회원명부
 
 //Member객체 arrayList 저장
 //멤버 추가
-	//멤버 삭제 - id값을 받아와서 일치하는 값이 있으면 remove, 없으면 "메세지 출력 
+	// 멤버 삭제 - id값을 받아와서 일치하는 값이 있으면 remove, 없으면 "메세지 출력
 	public boolean removeMember(int memberId) {
-		for(int i = 0; i < arrayList.size(); i++) {
+		for (int i = 0; i < arrayList.size(); i++) {
 			Member m = arrayList.get(i);
-			//i번에 있는 인덱스를 꺼내와서, 변수 m에 저장. 
-			//그런 후 if
-			if(memberId == m.getMemberId()) {
+			// i번에 있는 인덱스를 꺼내와서, 변수 m에 저장.
+			// 그런 후 if
+			if (memberId == m.getMemberId()) {
 				arrayList.remove(i);
 				return true;
 			}
@@ -36,11 +39,18 @@ public class MemberArrayList {//회원명부
 		System.out.println("맞는 아이디 없음");
 		return false;
 	}
-	//전체 회원 출력
+
+	// 전체 회원 출력
 	public void showAllMember() {
-		for(Member m : arrayList) {
-			System.out.println(m);
+//		for(Member m : arrayList) {
+//			System.out.println(m);
+//		}//이터레이터를 통해 다 꺼내오는 것으로 바꿔주기.
+//		System.out.println();
+		Iterator<Member> ir = arrayList.iterator();
+		while (ir.hasNext()) {
+			System.out.println(ir.next());
 		}
 		System.out.println();
+
 	}
 }
