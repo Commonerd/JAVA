@@ -23,7 +23,7 @@ public class PropertiesEx2 {
 		
 		System.out.println();
 		prop.list(System.out);
-		//저장되는 순서는 유지되지 않는다.
+		//저장되는 순서는 유지되지 않는다.	
 		
 	}
 
