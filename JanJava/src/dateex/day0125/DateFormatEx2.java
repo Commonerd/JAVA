@@ -2,7 +2,6 @@ package dateex.day0125;
 
 import java.util.*;
 import java.text.*;
-
 class DateFormatEx2{
 	public static void main(String[] args) 	{
 		// Calendar와 Date간의 변환은 다음과 같이 한다.
@@ -12,10 +11,10 @@ class DateFormatEx2{
 		Date day = cal.getTime();
 
 		SimpleDateFormat sdf1, sdf2, sdf3, sdf4;
-		sdf1 = new SimpleDateFormat("yyyy-MM-dd");
-		sdf2 = new SimpleDateFormat("yy-MM-dd E요일");
-		sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-		sdf4 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
+		sdf1 = new SimpleDateFormat("yyyy-MM-dd"); //2022-04-27
+		sdf2 = new SimpleDateFormat("yy-MM-dd E요일");//22-04-27 수요일
+		sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");//2022-04-27 15:05:37.591
+		sdf4 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");//2022-04-27 03:05:37 오후
 
 		System.out.println(sdf1.format(day)); // format(Date d)
 		System.out.println(sdf2.format(day));

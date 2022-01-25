@@ -13,19 +13,19 @@ class DateFormatEx1 {
 		
 		Locale e_locale = new Locale("en");
 		
-		sdf1 = new SimpleDateFormat("yyyy-MM-dd");
-		sdf2 = new SimpleDateFormat("''yy년 MMM dd일 E요일", e_locale);
-		sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-		sdf4 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
+		sdf1 = new SimpleDateFormat("yyyy-MM-dd");//2022-01-25
+		sdf2 = new SimpleDateFormat("''yy년 MMM dd일 E요일", e_locale);//'22년 Jan 25일 Tue요일
+		sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");//2022-01-25 14:54:28.597
+		sdf4 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");//2022-01-25 02:54:28 오후
 
-		sdf5 = new SimpleDateFormat("오늘은 올 해의 D번째 날입니다.");
-		sdf6 = new SimpleDateFormat("오늘은 이 달의 d번째 날입니다.");
-		sdf7 = new SimpleDateFormat("오늘은 올 해의 w번째 주입니다.");
-		sdf8 = new SimpleDateFormat("오늘은 이 달의 W번째 주입니다.");
-		sdf9 = new SimpleDateFormat("오늘은 이 달의 F번째 E요일입니다.");
+		sdf5 = new SimpleDateFormat("오늘은 올 해의 D번째 날입니다.");//오늘은 올 해의 25번째 날입니다.
+		sdf6 = new SimpleDateFormat("오늘은 이 달의 d번째 날입니다.");//오늘은 이 달의 25번째 날입니다.
+		sdf7 = new SimpleDateFormat("오늘은 올 해의 w번째 주입니다.");//오늘은 올 해의 5번째 주입니다.
+		sdf8 = new SimpleDateFormat("오늘은 이 달의 W번째 주입니다.");//오늘은 이 달의 5번째 주입니다.
+		sdf9 = new SimpleDateFormat("오늘은 이 달의 F번째 E요일입니다.");//오늘은 이 달의 4번째 화요일입니다.
 
 		System.out.println(sdf1.format(today)); // format(Date d)
-		System.out.println(sdf2.format(today));
+		System.out.println(sdf2.format(today)); 
 		System.out.println(sdf3.format(today));
 		System.out.println(sdf4.format(today));
 		System.out.println();
