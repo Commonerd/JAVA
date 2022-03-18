@@ -23,7 +23,12 @@ public class ThrowsEx1 {
 			e.printStackTrace();
 		}
 		
-			t1.wait(); //5번줄의 예외 형태에 따라 밑줄에러가 날 수도 안날 수도 있음.
+			try {
+				t1.wait();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} //5번줄의 예외 형태에 따라 밑줄에러가 날 수도 안날 수도 있음.
 		}
 	}
 

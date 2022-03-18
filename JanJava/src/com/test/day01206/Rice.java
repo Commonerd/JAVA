@@ -8,6 +8,7 @@ public class Rice extends Food {
 	}
 
 	public Rice(int i) {
+		super(price);//슈퍼클래스의 생성자를 호출해서 음식값 전달
 	}
 
 	public String getName() {
